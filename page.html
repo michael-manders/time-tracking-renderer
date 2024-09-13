@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Time Tracking Analysis</title>
+        <link rel="stylesheet" href="page.css" />
+        <script src="domtoimage.js"></script>
+        <script src="htmltocanvas.js"></script>
+        <script src="page.js"></script>
+    </head>
+    <body onload="display(1,1)">
+        <div id="display">
+            <div id="header">
+                <div id="info">
+                    <h1>My Life</h1>
+                    <p>Every 30 minutes of my from d1 to d2 (c1 days)</p>
+                </div>
+                <div id="key"></div>
+                <div id="mood">
+                    <p>Mood:</p>
+                    <div id="scale">
+                        <div>-2</div>
+                        <div>0</div>
+                        <div>2</div>
+                    </div>
+                </div>
+            </div>
+            <div id="chart"></div>
+        </div>
+        <button onclick="download()">Download (will take a few minutes)</button>
+    </body>
+</html>

@@ -1,0 +1,148 @@
+tr > td {
+    width: 17px;
+    height: 15px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    /* border-top: 2px solid gray; */
+}
+
+tr {
+    border: 1px solid black;
+}
+
+tr > th {
+    background-color: rgb(85, 85, 92);
+    color: rgb(220, 220, 220);
+    font: 5px monospace;
+    color: rgb(220, 220, 220);
+}
+
+.label {
+    /* background-color: rgb(55, 55, 58); */
+    width: 80px !important;
+    color: rgb(35, 35, 35);
+    font-family: monospace;
+    font-size: 12px;
+    /* border-top: 2px solid black; */
+    text-indent: 3px;
+}
+
+#chart {
+    border: 10px solid black;
+    width: fit-content;
+}
+
+#header {
+    height: 470px;
+    width: 896px;
+    border: 10px solid black;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+#info {
+    height: 88px;
+    width: 896px;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    border-bottom: 2px solid white;
+    /* margin-bottom: 0px; */
+}
+
+#info > h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+#info > p {
+    font-size: 20px;
+    margin: 0;
+}
+
+#info > * {
+    width: 100%;
+}
+
+#key {
+    /* background-color: ; */
+    /* width: 100%; */
+    /* height: 100%; */
+    font: 17px monospace;
+    color: white;
+
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#key > tr {
+    /* width: 100%; */
+}
+
+.keylabel {
+    width: 25px;
+}
+.key {
+    padding-left: 10px;
+    width: 150px;
+}
+
+.description {
+    width: 500px;
+}
+
+.count {
+    width: 70px;
+}
+
+.average {
+    width: 70px;
+}
+
+#display {
+    width: fit-content;
+    height: fit-content;
+}
+
+#mood {
+    height: 25px;
+    width: 896px;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+}
+
+#mood > p {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+}
+
+#mood > #scale {
+    width: 80%;
+    font-size: 20px;
+    font-family: monospace;
+    background-image: linear-gradient(
+        to right,
+        rgba(224, 102, 102, 1),
+        rgba(255, 217, 102, 1),
+        rgba(147, 196, 125, 1)
+    );
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+#mood > #scale > * {
+    margin: 1px 5px 1px 5px;
+    color: white;
+}
